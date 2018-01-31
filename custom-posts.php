@@ -68,8 +68,8 @@ function my_custom_posttypes() {
         'view_item' => 'Ver',
         'all_items' => 'Todos los Casos',
         'search_items' => 'Buscar Caso',
-        'parent_item_colon' => 'Página de Caso:',
-        'not_found' => 'No se encontraron Caso.',
+        'parent_item_colon' => 'Página de caso:',
+        'not_found' => 'No se encontraron casos.',
         'not_found_in_trash' => 'No hay Caso en la papelera.',
     );
 
@@ -100,6 +100,50 @@ function my_custom_posttypes() {
         'show_in_rest' => true
     );
     register_post_type('caso', $argsC);
+	
+	//Actividades
+    $labelsA = array(
+        'name' => 'Actividades',
+        'singular_name' => 'Actividad',
+        'menu_name' => 'Actividad',
+        'name_admin_bar' => 'Actividad',
+        'add_new' => 'Agregar actividad nuevo',
+        'add_new_item' => 'Agregar actividad',
+        'new_item' => 'Nueva actividad',
+        'edit_item' => 'Editar',
+        'view_item' => 'Ver',
+        'all_items' => 'Todos las actividades',
+        'search_items' => 'Buscar actividad',
+        'parent_item_colon' => 'Actividad:',
+        'not_found' => 'No se encontraron actividades.',
+        'not_found_in_trash' => 'No hay actividades en la papelera.',
+    );
+
+    $argsA = array(
+        'labels' => $labelsA,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-carrot',
+        'query_var' => true,
+        'rewrite' => array('slug' => 'actividades'),
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => 6,
+        'supports' => array(
+            'title',
+            'editor',
+            'custom-fields',
+            'revisions',
+            'page-attributes'
+        ),
+        'show_in_nav_menus' => true,
+        'show_in_admin_bar' => true,
+        'show_in_rest' => true
+    );
+    register_post_type('actividad', $argsA);
 }
 
 add_action('init', 'my_custom_posttypes');
