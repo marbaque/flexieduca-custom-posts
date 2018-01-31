@@ -137,12 +137,12 @@ function my_custom_posttypes() {
             'editor',
             'revisions',
             'page-attributes',
-			'taxonomies'
         ),
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
         'show_in_rest' => true,
-		'insert_into_item' => 'true',
+	'insert_into_item' => 'true',
+	'taxonomies'  => array( 'category' ),
 				
     );
     register_post_type('actividad', $argsA);
