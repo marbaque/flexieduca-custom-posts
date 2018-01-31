@@ -137,6 +137,7 @@ function my_custom_posttypes() {
             'editor',
             'revisions',
             'page-attributes',
+	'comments'
         ),
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
