@@ -142,7 +142,7 @@ function my_custom_posttypes() {
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
         'show_in_rest' => true,
-	'insert_into_item' => 'true',
+	'insert_into_item' => true,
 	'taxonomies'  => array( 'category' ),
 				
     );
