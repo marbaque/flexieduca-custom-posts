@@ -24,7 +24,7 @@ function my_custom_posttypes() {
         'search_items' => 'Buscar páginas de contenido',
         'parent_item_colon' => 'Contenido hijo de:',
         'not_found' => 'No se encontraron páginas de contenido.',
-        'not_found_in_trash' => 'No hay páginas de contenidos en el basurero.',
+        'not_found_in_trash' => 'No hay contenidos en el basurero.',
     );
 
     $args = array(
