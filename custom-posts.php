@@ -22,7 +22,7 @@ function my_custom_posttypes() {
         'view_item' => 'Ver',
         'all_items' => 'Todo el contenido',
         'search_items' => 'Buscar páginas de contenido',
-        'parent_item_colon' => 'Página de contenidos principales:',
+        'parent_item_colon' => 'Contenido hijo de:',
         'not_found' => 'No se encontraron páginas de contenido.',
         'not_found_in_trash' => 'No hay páginas de contenidos en el basurero.',
     );
