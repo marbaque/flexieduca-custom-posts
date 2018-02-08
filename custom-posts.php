@@ -98,7 +98,7 @@ function my_custom_posttypes() {
         'show_in_admin_bar' => true,
         'show_in_rest' => true,
     );
-    register_post_type('caso', $argsC);
+    register_post_type('casos', $argsC);
 	
 	//Actividades
     $labelsA = array(
