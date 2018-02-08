@@ -186,19 +186,19 @@ function custom_taxonomies() {
 
     register_taxonomy('autor', array('multimedia'), $args);
     
-    //tendencias
+    //estrategias
     $labelsT = array(
-        'name' => 'Tendencias',
-        'singular_name' => 'Tendencia',
-        'search_items' => 'Buscar tendencia',
+        'name' => 'Estrategia',
+        'singular_name' => 'Estrategia',
+        'search_items' => 'Buscar estrategia',
         'all_items' => 'Todas',
-        'parent_item' => 'ID principal de la tendencia',
-        'parent_item_colon' => 'ID principal de la tendencia:',
-        'edit_item' => 'Editar tendencia',
-        'update_item' => 'Actualizar tendencia asignada',
-        'add_new_item' => 'Agregar nombre de tendencia',
-        'new_item_name' => 'Nueva tendencia',
-        'menu_name' => 'Tendencia asignada',
+        'parent_item' => 'ID principal de la estrategia',
+        'parent_item_colon' => 'ID principal de la estrategia:',
+        'edit_item' => 'Editar estrategia',
+        'update_item' => 'Actualizar estrategia asignada',
+        'add_new_item' => 'Nombrar la estrategia',
+        'new_item_name' => 'Nueva estrategia',
+        'menu_name' => 'Estrategia asignada',
     );
 
     $argsT = array(
