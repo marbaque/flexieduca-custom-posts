@@ -51,6 +51,8 @@ function my_custom_posttypes() {
         ),
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
+        'orderby'=> 'menu_order',
+		'order'=>'ASC',
     );
     register_post_type('multimedia', $args);
     
@@ -97,6 +99,8 @@ function my_custom_posttypes() {
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
         'show_in_rest' => true,
+        'orderby'=> 'menu_order',
+		'order'=>'ASC',
     );
     register_post_type('caso', $argsC);
 	
@@ -141,7 +145,8 @@ function my_custom_posttypes() {
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
         'show_in_rest' => true,
-	'insert_into_item' => true,				
+        'orderby'=> 'menu_order',
+		'order'=>'ASC',
     );
     register_post_type('actividad', $argsA);
 }
